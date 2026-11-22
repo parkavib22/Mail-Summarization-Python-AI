@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 24px;
+}
+.container {
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 28px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+h1 { color: #202938; }
+label { display: block; margin-top: 14px; font-weight: bold; }
+input, button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+}
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #1769aa;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.note { color: #555; font-size: 0.9rem; }
+#result { margin-top: 24px; overflow-wrap: anywhere; }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mail Summarization and Attachment Download</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>Mail Summarization and Attachment Download</h1>
+    <p>Enter your Gmail address and Google App Password to summarize your latest five emails and save their attachments.</p>
+    <form id="emailForm">
+      <label for="email">Gmail address</label>
+      <input id="email" type="email" placeholder="you@gmail.com" required>
+      <label for="password">Google App Password</label>
+      <input id="password" type="password" placeholder="App Password" required>
+      <button type="submit">Fetch and Summarize Emails</button>
+    </form>
+    <p class="note">Your credentials are used for this request only. Never share or upload passwords or API keys.</p>
+    <section id="result" aria-live="polite"></section>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
